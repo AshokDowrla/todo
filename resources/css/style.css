@@ -180,3 +180,21 @@ ul.todo li .buttons button.complete svg .fill {
 }
 ul.todo li .buttons button.remove:hover svg .fill{
 	fill:#EF2C2C;
+}
+
+ul.todo#completed:not(:empty){
+	position: relative;
+	padding:70px 0 0 0;
+	
+}
+
+ul.todo#completed:before {
+  content: '';
+  width: 150px;
+  background: #d8e5e0;
+   top: 30px;
+  left: 50%;
+  height: 1px;
+   position: absolute;
+  margin: 0 0 0 -75px;
+}

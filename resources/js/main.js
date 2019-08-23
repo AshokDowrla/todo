@@ -18,6 +18,14 @@ function buttonclick(){
 		document.getElementById('enteritem').value='';
 	}
 }
+
+
+document.getElementById('enteritem').addEventListener('keydown', function (e) {
+  var value = this.value;
+  if ((e.code === 'Enter' || e.code === 'NumpadEnter') && value) {
+    addItem(value);
+  }
+});
 function completeItem(){
 	var item=this.parentNode.parentNode;
 	var parrent=item.parentNode;
